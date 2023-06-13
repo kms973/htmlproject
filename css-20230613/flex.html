@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container{
+            display: flex;
+            height: 200px;
+            background-color: dodgerblue;
+            align-items: center;
+            /* flex-wrap: wrap;*/
+            /* flex-direction: ; */
+            /* flex-flow: row wrap; wrap과 direction을 한번에 지정할 수 있다 */
+            justify-content: center; /*flex 정렬 flex-start, center, flex-end*/
+            /* justify-content: space-between; item간의 간격 조절 */
+
+        }
+        .container > div{
+            background-color: aliceblue;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            width: 100px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="item">helloflex</div>
+        <div class="item">abc</div>
+        <div class="item">helloflex</div>
+    </div> -->
+
+    <div class="container">
+        <div >1</div>
+        <div >2</div>
+        <div style="flex-basis: 300px">3</div>
+        <div >4</div>
+        <!--<div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div> -->
+
+    </div>
+</body>
+</html>
